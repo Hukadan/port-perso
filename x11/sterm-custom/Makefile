@@ -19,7 +19,7 @@ USE_XORG=	x11 xext xft
 USE_GITHUB=     yes
 GH_ACCOUNT=     hukadan
 GH_PROJECT=     st
-GH_TAGNAME=     292f5d8aef9ae0fc3bcfdd8cef7da4682b6f0998
+GH_TAGNAME=     dffa0591df5a5fd50703e480f17f340a7b58ab80
 
 PLIST_FILES=	bin/st man/man1/st.1.gz
 
