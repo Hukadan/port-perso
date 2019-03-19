@@ -4,8 +4,6 @@
 PORTNAME=	sterm
 DISTVERSION=	0.8.2
 CATEGORIES=	x11
-MASTER_SITES=	http://dl.suckless.org/st/
-DISTNAME=	st-${PORTVERSION}
 
 MAINTAINER=	hukadan@protonmail.com
 COMMENT=	Simple X terminal
@@ -18,6 +16,10 @@ LIB_DEPENDS=	libfontconfig.so:x11-fonts/fontconfig \
 
 USES=		pkgconfig
 USE_XORG=	x11 xext xft
+USE_GITHUB=     yes
+GH_ACCOUNT=     hukadan
+GH_PROJECT=     st
+GH_TAGNAME=     cf31822010ac2429c6b93da20ca1886212101a07
 
 PLIST_FILES=	bin/st man/man1/st.1.gz
 
