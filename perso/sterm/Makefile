@@ -3,7 +3,7 @@
 
 PORTNAME=	sterm
 DISTVERSION=	0.8.2
-CATEGORIES=	x11
+CATEGORIES=	perso
 
 MAINTAINER=	hukadan@protonmail.com
 COMMENT=	Simple X terminal
