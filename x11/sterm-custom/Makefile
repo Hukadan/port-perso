@@ -1,7 +1,7 @@
 # Created by: Matthew Donovan <kitchetech@gmail.com>
 # $FreeBSD$
 
-PORTNAME=	sterm
+PORTNAME=	sterm-custom
 DISTVERSION=	0.8.2
 CATEGORIES=	x11
 
