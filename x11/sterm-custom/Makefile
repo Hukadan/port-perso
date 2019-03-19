@@ -19,7 +19,7 @@ USE_XORG=	x11 xext xft
 USE_GITHUB=     yes
 GH_ACCOUNT=     hukadan
 GH_PROJECT=     st
-GH_TAGNAME=     cf31822010ac2429c6b93da20ca1886212101a07
+GH_TAGNAME=     292f5d8aef9ae0fc3bcfdd8cef7da4682b6f0998
 
 PLIST_FILES=	bin/st man/man1/st.1.gz
 
@@ -31,10 +31,10 @@ PORTDOCS=	FAQ LEGACY README TODO
 
 OPTIONS_DEFINE=	DOCS
 
-#post-install:
-	#@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/st
-	#@${MKDIR} ${STAGEDIR}${DATADIR}
-	#cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDATA} ${STAGEDIR}${DATADIR}
+post-install:
+	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/st
+	@${MKDIR} ${STAGEDIR}${DATADIR}
+	cd ${WRKSRC} && ${INSTALL_DATA} ${PORTDATA} ${STAGEDIR}${DATADIR}
 
 post-install-DOCS-on:
 	@${MKDIR} ${STAGEDIR}${DOCSDIR}
