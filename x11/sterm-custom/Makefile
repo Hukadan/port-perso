@@ -2,7 +2,9 @@
 # $FreeBSD$
 
 PORTNAME=	sterm-custom
-DISTVERSION=	0.8.2
+PORTVERSION=	0.8.2
+PORTREVISION=   1
+
 CATEGORIES=	x11
 
 MAINTAINER=	hukadan@protonmail.com
@@ -19,7 +21,7 @@ USE_XORG=	x11 xext xft
 USE_GITHUB=     yes
 GH_ACCOUNT=     hukadan
 GH_PROJECT=     st
-GH_TAGNAME=     dffa0591df5a5fd50703e480f17f340a7b58ab80
+GH_TAGNAME=     8173eaebc30d79dd9895d0766684136354ac69ec
 
 PLIST_FILES=	bin/st man/man1/st.1.gz
 
