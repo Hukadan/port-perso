@@ -3,7 +3,7 @@
 
 PORTNAME=	sterm-custom
 PORTVERSION=	0.8.2
-PORTREVISION=   2
+PORTREVISION=   3
 
 CATEGORIES=	x11
 
@@ -21,7 +21,7 @@ USE_XORG=	x11 xext xft
 USE_GITHUB=     yes
 GH_ACCOUNT=     hukadan
 GH_PROJECT=     st
-GH_TAGNAME=     fb559928779bb33c850b9dc7fda3251b9f7297fe
+GH_TAGNAME=     e25292514c740a072ff2c79ab6ba60219c24c129
 
 PLIST_FILES=	bin/st man/man1/st.1.gz
 
