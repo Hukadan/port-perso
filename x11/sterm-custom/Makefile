@@ -3,7 +3,7 @@
 
 PORTNAME=	sterm-custom
 PORTVERSION=	0.8.2
-PORTREVISION=   4
+PORTREVISION=   5
 
 CATEGORIES=	x11
 
@@ -21,7 +21,7 @@ USE_XORG=	x11 xext xft
 USE_GITHUB=     yes
 GH_ACCOUNT=     hukadan
 GH_PROJECT=     st
-GH_TAGNAME=     602fbe928f38bf65ce53e9f4c9b6b9a0c88c1134
+GH_TAGNAME=     2f7c93f9ec58a9b5320ab115bf4d670739063ef8
 
 PLIST_FILES=	bin/st man/man1/st.1.gz
 
@@ -32,6 +32,15 @@ PORTDATA=	config.def.h st.info
 PORTDOCS=	FAQ LEGACY README TODO
 
 OPTIONS_DEFINE=	DOCS
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|^VERSION = .*|VERSION = ${PORTVERSION}|' \
+		-e 's|^PREFIX = .*|PREFIX = ${PREFIX}|' \
+		-e "s|^MANPREFIX = .*|MANPREFIX = ${MANPREFIX}/man|" \
+		-e "s|^X11INC = .*|X11INC = ${LOCALBASE}/include|" \
+		-e "s|^X11LIB = .*|X11LIB = ${LOCALBASE}/lib|" \
+		-e "s|^CPPFLAGS =|CPPFLAGS +=|" \
+		${WRKSRC}/config.mk
 
 post-install:
 	@${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/st
