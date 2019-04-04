@@ -34,6 +34,13 @@ MAKE_ARGS=	CC="${CC}" \
 PLIST_FILES=	bin/dwm \
 		man/man1/dwm.1.gz
 
+OPTIONS_DEFINE=	XINERAMA
+OPTIONS_DEFAULT=XINERAMA
+
+XINERAMA_USE=	XORG=xinerama
+XINERAMA_MAKE_ARGS_OFF=	XINERAMAFLAGS= XINERAMALIBS=
+
+
 post-configure:
 	@${REINPLACE_CMD} -E \
 		-e "s|(CFLAGS[[:space:]]*)= |\1+= |" \
