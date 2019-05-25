@@ -4,7 +4,7 @@
 PORTNAME=	dwm-custom
 DISTVERSION=	6.2
 CATEGORIES=	x11-wm
-PORTREVISION=   2
+PORTREVISION=   3
 
 MAINTAINER=	hukadan@protonmail.com
 COMMENT=	Dynamic, small, fast and simple window manager
@@ -21,7 +21,7 @@ USE_XORG=	x11 xft
 USE_GITHUB=     yes
 GH_ACCOUNT=     hukadan
 GH_PROJECT=     dwm
-GH_TAGNAME=     8a38d7e9ff83466f439041b6d4ddc67c069fdf81
+GH_TAGNAME=     1dcb1ef12b665aa5307dccd9ec2aabff1bc9db3f
 
 MAKE_ARGS=	CC="${CC}" \
 		FREETYPEINC="${LOCALBASE}/include/freetype2" \
