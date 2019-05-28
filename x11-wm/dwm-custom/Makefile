@@ -4,7 +4,7 @@
 PORTNAME=	dwm-custom
 DISTVERSION=	6.2
 CATEGORIES=	x11-wm
-PORTREVISION=   4
+PORTREVISION=   5
 
 MAINTAINER=	hukadan@protonmail.com
 COMMENT=	Dynamic, small, fast and simple window manager
