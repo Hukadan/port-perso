@@ -21,7 +21,7 @@ USE_XORG=	x11 xft
 USE_GITHUB=     yes
 GH_ACCOUNT=     hukadan
 GH_PROJECT=     dwm
-GH_TAGNAME=     40c91f3eab4c82ebddb95c9e15be390745e27d78
+GH_TAGNAME=     32fb4be7908272bd95f3f37cd2be0e66853e4035
 
 MAKE_ARGS=	CC="${CC}" \
 		FREETYPEINC="${LOCALBASE}/include/freetype2" \
